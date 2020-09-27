@@ -1,16 +1,13 @@
-package pessoas;
+package model.entidades.pessoas;
 
 public class Pessoa {
 	private int id;
 	private String nome;
 	private String endereco;
 	
-	public Pessoa(String nome) {
-		this.nome = nome;
-	}
-	
 	public Pessoa(String n, String end, int id) {
-		this.setNome(n);
+		this.nome = n;
+		this.endereco = end;
 		this.id = id + 1;
 	}
 	
